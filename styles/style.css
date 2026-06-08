@@ -1,1 +1,81 @@
-/* место для вашего кода */
+.header {
+  padding: 92px 50px 96px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+}
+
+.header__links-list {
+  display: flex;
+  column-gap: 29px;
+  list-style: circle;
+}
+
+.header__links-list-item {
+  padding-left: 4px;
+  line-height: 1;
+}
+
+.header__links-list-item--no-bullit {
+  list-style: none;
+  padding-left: 0;
+}
+
+.header__link {
+  text-transform: lowercase;
+  font-size: 18px;
+  text-underline-offset: 4px;
+}
+
+.header__link--active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  min-width: 148px;
+  line-height: 0;
+}
+
+.header__address {
+  max-width: 238px;
+  justify-self: end;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.35;
+  text-transform: lowercase;
+  text-underline-offset: 3px;
+}
+
+.cover {
+  padding: 165px 50px 49px;
+  margin-bottom: 180px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 757px;
+}
+
+.description {
+}
+
+.lots {
+  padding: 0 24px;
+  margin-bottom: 120px;
+}
+
+.about {
+  padding: 35px 24px 0px;
+  margin-bottom: 180px;
+}
+
+.footer {
+  padding: 0 50px 82px;
+}
