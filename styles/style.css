@@ -1,9 +1,11 @@
+/* TODO: сделать область наведения на все ссылки больше */
+
 .header {
-  padding: 92px 50px 96px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   column-gap: 20px;
+  padding: 92px 50px 96px;
 }
 
 .header__links-list {
@@ -18,14 +20,14 @@
 }
 
 .header__links-list-item--no-bullit {
-  list-style: none;
   padding-left: 0;
+  list-style: none;
 }
 
 .header__link {
-  text-transform: lowercase;
   font-size: 18px;
   text-underline-offset: 4px;
+  text-transform: lowercase;
 }
 
 .header__link--active {
@@ -39,33 +41,33 @@
 }
 
 .header__address {
-  max-width: 238px;
   justify-self: end;
+  max-width: 238px;
 }
 
 .address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-style: normal;
   font-size: 18px;
+  font-style: normal;
   line-height: 1.35;
   text-underline-offset: 3px;
 }
 
 .cover {
   position: relative;
-  padding: 165px 50px 49px;
-  margin-bottom: 180px;
-  background-image: url(../images/cover.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 757px;
   z-index: -2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 757px;
+  margin-bottom: 180px;
+  padding: 165px 50px 49px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .cover--theme-bright {
@@ -76,11 +78,11 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: #000;
   opacity: 0.6;
-  z-index: -1;
+  background-color: #000;
 }
 
 .cover__title {
@@ -90,9 +92,9 @@
 }
 
 .aligned-text {
+  display: block;
   line-height: 1.18;
   letter-spacing: 0.3em;
-  display: block;
 }
 
 .aligned-text--center {
@@ -121,22 +123,95 @@
 }
 
 .cover__bet-button {
-  padding: 12px 32px 11px 31px;
   border: 1px solid #fff;
-  text-transform: inherit;
+  padding: 12px 32px 11px 31px;
   color: inherit;
-  background-color: transparent;
   line-height: 1.2;
+  text-transform: inherit;
+  background-color: transparent;
 }
 
 .lots {
-  padding: 0 24px;
   margin-bottom: 120px;
+  padding: 0 24px;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  margin-left: 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card-link,
+.card {
+  height: 100%;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 25px;
+  padding: 48px 40px;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+}
+
+.card--type-film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card--type-book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card--type-picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  line-height: 1.2;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.card__text {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* TODO: сделать область наведения на ссылку больше */
+
+.lots__look-more-link {
+  margin-left: 40px;
+  font-size: 20px;
+  text-underline-offset: 4px;
 }
 
 .about {
-  padding: 35px 24px 0px;
   margin-bottom: 180px;
+  padding: 35px 24px 0px;
 }
 
 .footer {
