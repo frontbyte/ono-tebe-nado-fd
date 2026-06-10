@@ -210,8 +210,41 @@
 }
 
 .about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  justify-items: center;
   margin-bottom: 180px;
-  padding: 35px 24px 0px;
+  padding: 34px 24px 0px;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  border-radius: 50%;
+  background-color: #000;
+  aspect-ratio: 1;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+/* TODO: подумать, может сделать выравнивание заголовка с центром логотипа при помощи гридов 2х2 */
+
+.about__title {
+  padding: 101px 0 100px 25px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding-left: 25px;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .footer {
