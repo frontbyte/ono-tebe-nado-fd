@@ -1,1 +1,1 @@
-https://github.com/frontbyte/ono-tebe-nado-fd#
+https://github.com/frontbyte/ono-tebe-nado-fd
